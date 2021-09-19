@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+::-webkit-scrollbar {
+    width: 0;
+  }
+
+html{
+    min-height:100%;
+}
+body{
+    background: url('./img/background.png') no-repeat ; 
+    background-size: 100%;
+    width: auto;
+    height: auto;
+    margin: 0; 
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    overflow: hidden;
+  
+
+}
+.header {
+    width: auto;
+    height: 20px;
+    background: rgb(131, 131, 131);
+    opacity: 0.95;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+#doc_time{
+    color: white;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    size: 9px;
+}
+.window {
+    width: 570px;
+    height: 470px;
+    background: #f0f0f0;
+    margin-top: 90px;
+    margin-left: 40px;
+    border-radius: 8px;
+
+}
+.window_top {
+    width: 570px;
+    height: 50px;
+    background: rgb(245, 245, 245);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    box-shadow: 0px 1px rgb(211, 211, 211);  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.bottoms{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;  
+}
+
+ #circle {
+    width: 12px;
+    height: 12px;
+    border-radius: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+ }
+
+ .circle_red {
+    background-color: red;
+    margin-left: 18px;
+ }
+
+ .circle_orange {
+    background-color: orange;
+    margin-left: 8px;
+ }
+
+ .circle_gray {
+     background-color: rgb(194, 194, 194);
+     margin-left: 8px;
+ }
+
+
+.menubar{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.menubar::-webkit-scrollbar { 
+    width: 0; 
+}
+
+.rectangle_menubar{
+    width: 500px;
+    height: 87px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background: rgb(131, 131, 131);
+    border-radius: 25px;
+    opacity: 0.95;
+ 
+
+    
+}
+
+
+.form {
+    background: rgb(245, 245, 245);
+    margin-right: 20px;
+    border: 1px solid rgb(223, 223, 223);
+    border-width: thin;
+    border-radius: 8px;
+    width: 180px;
+    height: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .form::-webkit-scrollbar { 
+    width: 0; 
+}
+
+  input {
+    all: unset;
+  }
+
+  ::placeholder {
+    color: darkgray;
+    font-size: 14px;
+  }
+  
+  button {
+    all: unset;
+    width: 35px;
+    height: 44px;
+    border-radius: 8px;
+  }
+  
+  svg {
+    color: darkgray;
+    fill: currentColor;
+    width: 19x;
+    height: 19px;
+    padding: 10px 10px 5px 10px;
+  }
+
+.window_main {
+    background-color: rgb(224, 224, 224);
+    width: 530px;
+    height: 365px;
+    margin: 40px 10px 10px 20px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.window_main::-webkit-scrollbar { 
+    width: 0; 
+}
+
+  
+p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: rgb(102, 101, 101);
+}
+
+li {
+    list-style-type: none;
+    display: inline;
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: auto;
+}
+
+.vl {
+    height: 55px;
+    width: 1px;
+    background-color: rgb(87, 87, 87);
+}
+
+.images{
+    height: 360px;
+    width: auto;
+    overflow: scroll;
+    margin: 3px 5px;
+}
+
+a:hover:before{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  content:"";
+  z-index:-5;
+  
+
+}
+
+.bg1:before{
+  background:url('./img/wallpapers/wallpaper1.jpeg');
+  background-size: 100%;
+  width: auto;
+  height: auto;
+  overflow: no-scroll;
+  margin: 0; 
+  transition: 1s;
+}
+
+.bg2:before{
+  background:url('./img/wallpapers/wallpaper2.jpeg');
+  background-size: 100%;
+  width: auto;
+  height: auto;
+}
+
+.bg3:before{
+  background:url('./img/wallpapers/wallpaper3.jpeg');
+  background-size: 100%;
+  width: auto;
+  height: auto;
+}
+
+.bg4:before{
+    background:url('./img/wallpapers/wallpaper4.png') no-repeat;
+    background-size: 100%;
+    width: auto;
+    height: auto;
+}
+
+.bg5:before{
+    background:url('./img/wallpapers/wallpaper5.jpeg') no-repeat;
+    background-size: 100%;
+    width: auto;
+    height: auto;
+}
+
+.bg6:before{
+    background:url('./img/wallpapers/wallpaper6.jpeg') no-repeat;
+    background-size: 100%;
+    width: auto;
+    height: auto;
+}
+
+.bg7:before{
+    background:url('./img/wallpapers/wallpaper7.jpeg') no-repeat;
+    background-size: 100%;
+    width: auto;
+    height: auto;
+}
+
+.bg8:before{
+    background:url('./img/wallpapers/wallpaper8.jpeg') no-repeat;
+    background-size: 100%;
+    width: auto;
+    height: auto;
+}
+
+.bg9:before{
+    background:url('./img/wallpapers/wallpaper9.jpeg') no-repeat;
+    background-size: 100%;
+    width: auto;
+    height: auto;
+}
+
+.bg10:before{
+    background:url('./img/wallpapers/wallpaper10.jpeg') no-repeat;
+    background-size: 100%;
+    width: auto;
+    height: auto;
+}
+
+.bg11:before{
+    background:url('./img/wallpapers/wallpaper11.jpeg') no-repeat;
+    background-size: 100%;
+    width: auto;
+    height: auto;
+}
+
+.bg12:before{
+    background:url('./img/wallpapers/wallpaper12.jpeg') no-repeat;
+    background-size: 100%;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+}
+
+
+.image:hover {
+    transform: scale(1.2);
+    border-color: gray;
+    border-radius: 10px;
+    
+  }
+
+.image {
+    border: 3px solid transparent;
+    transition: all 1s ease-in-out;
+}
